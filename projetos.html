@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos — Gabriel Gomes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/projetos.css">
+</head>
+
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <nav class="navbar">
+    <div class="nav-logo">GG<span class="accent">.</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="projetos.html" class="active">Projetos</a></li>
+    </ul>
+  </nav>
+
+  <main class="projetos-page">
+
+    <section class="page-header">
+      <span class="page-tag">// meus projetos</span>
+      <h1 class="page-title">O que eu <span class="highlight">construo</span></h1>
+      <p class="page-subtitle">Projetos que mostram minha evolução como desenvolvedor</p>
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-num" id="count-projects">2</span>
+          <span class="stat-label">projetos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">tecnologias</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">dedicação</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="HTML">HTML</button>
+      <button class="filter-btn" data-filter="CSS">CSS</button>
+      <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+    </div>
+
+    <section class="projetos-grid" id="projetos-grid">
+
+      <article class="project-card reveal" data-tags="HTML,CSS,JavaScript">
+        <div class="project-image">
+          <img src="img/portifolio.png" alt="Portfólio Pessoal">
+          <div class="project-overlay">
+            <span class="overlay-label">Ver detalhes</span>
+          </div>
+          <span class="project-number">01</span>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Portfólio Pessoal</h3>
+            <span class="project-status status-live">Live</span>
+          </div>
+          <p class="project-desc">
+            Site desenvolvido para apresentar minhas habilidades, projetos e evolução como desenvolvedor. Design responsivo com animações e efeito de digitação.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="index.html" target="_blank" class="plink plink-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver Projeto
+            </a>
+            <a href="#" target="_blank" class="plink plink-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-tags="HTML,CSS,JavaScript" style="--delay: 0.1s">
+        <div class="project-image">
+          <img src="img/Site.png" alt="Projeto Interdisciplinar">
+          <div class="project-overlay">
+            <span class="overlay-label">Ver detalhes</span>
+          </div>
+          <span class="project-number">02</span>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Projeto Interdisciplinar</h3>
+            <span class="project-status status-live">Live</span>
+          </div>
+          <p class="project-desc">
+            E-commerce de peças e acessórios para carros de tuning. Projeto funcional, responsivo e visualmente atraente, destacando produtos, categorias e marcas do setor automotivo.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span>
+            <span class="ptag">CSS</span>
+            <span class="ptag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://gabrielarildo.github.io/projeto-interdisciplinar/" target="_blank" class="plink plink-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Ver Projeto
+            </a>
+            <a href="https://github.com/gabrielarildo/projeto-interdisciplinar" target="_blank" class="plink plink-ghost">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="empty-state" id="empty-state" style="display:none">
+      <span class="empty-icon">🔍</span>
+      <p>Nenhum projeto com essa tecnologia ainda.</p>
+    </div>
+
+    <section class="cta-section reveal" style="--delay: 0.3s">
+      <p class="cta-text">Mais projetos em breve. Acompanhe no GitHub!</p>
+      <a href="https://github.com/gabrielarildo" target="_blank" class="btn btn-primary">
+        Ver GitHub →
+      </a>
+    </section>
+
+  </main>
+
+  <script src="/JS/scriptProjetos.js"></script>
+
+</body>
+</html>
